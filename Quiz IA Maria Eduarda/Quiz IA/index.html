@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Quiz interativo — Você decide o futuro da IA" />
+  <title>Você decide o futuro da IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card" aria-live="polite">
+      <h1 class="title">Você decide o futuro da IA</h1>
+
+      <div class="progress" aria-hidden="true">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <p id="pergunta" class="caixa-perguntas"></p>
+
+      <div class="caixa-alternativas" role="radiogroup" aria-labelledby="pergunta"></div>
+
+      <div id="resultado" class="caixa-resultado visually-hidden" aria-hidden="true">
+        <h2>Em 2049...</h2>
+        <p class="texto-resultado"></p>
+        <div class="result-actions">
+          <button id="resetBtn" class="btn secondary">Refazer</button>
+          <button id="copyBtn" class="btn">Copiar resultado</button>
+        </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
